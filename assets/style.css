@@ -156,6 +156,8 @@ em { font-style: italic; color: var(--brass); }
 .product-body h3 { font-size: 1.6rem; margin-bottom: .5rem; }
 .product-body > p:not(.tag) { font-size: .93rem; color: var(--muted); }
 .chips { list-style: none; margin: 1.1rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.product-link { display: inline-block; margin-top: 1.1rem; font-size: .88rem; font-weight: 600; color: var(--brass); text-decoration: none; }
+.product-link:hover { text-decoration: underline; }
 .chips li { font-size: .75rem; padding: .3rem .7rem; border: 1px solid var(--line); color: var(--text); }
 .note { margin-top: 1.8rem; font-size: .85rem; color: var(--muted); }
 .note a { color: var(--brass); }
