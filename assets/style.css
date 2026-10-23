@@ -129,6 +129,24 @@ em { font-style: italic; color: var(--brass); }
 .step-num { display: block; font-family: var(--serif); font-size: 2.6rem; color: var(--brass-light); line-height: 1; margin-bottom: 1rem; }
 .steps p { font-size: .94rem; margin: 0; }
 
+/* Products */
+.products { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.75rem; }
+.product { background: var(--white); border: 1px solid var(--line); display: flex; flex-direction: column; }
+.shot { margin: 0; position: relative; overflow: hidden; aspect-ratio: 16 / 10; background: var(--ink); border-bottom: 3px solid var(--brass); }
+.shot img { width: 100%; height: 100%; object-fit: cover; object-position: top left; transform: scale(1.04); }
+.shot::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(14,26,43,0) 45%, rgba(14,26,43,.55) 100%);
+}
+.product-body { padding: 1.8rem 2rem 2rem; }
+.tag { font-size: .7rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--brass); margin-bottom: .5rem; }
+.product-body h3 { font-size: 1.6rem; margin-bottom: .5rem; }
+.product-body > p:not(.tag) { font-size: .93rem; color: var(--muted); }
+.chips { list-style: none; margin: 1.1rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.chips li { font-size: .75rem; padding: .3rem .7rem; border: 1px solid var(--line); color: var(--text); }
+.note { margin-top: 1.8rem; font-size: .85rem; color: var(--muted); }
+.note a { color: var(--brass); }
+
 /* Sectors */
 .sectors { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .sectors li { padding: 1.8rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--muted); font-size: .92rem; }
@@ -206,7 +224,8 @@ em { font-style: italic; color: var(--brass); }
 }
 
 @media (max-width: 600px) {
-  .services, .sectors, .steps, .principles { grid-template-columns: 1fr; }
+  .services, .sectors, .steps, .principles, .products { grid-template-columns: 1fr; }
+  .product-body { padding: 1.4rem 1.4rem 1.6rem; }
   .stat strong { font-size: 2.1rem; }
   .stat { padding: 1.6rem 1rem; }
   .hero-card { padding: 1.8rem; }
