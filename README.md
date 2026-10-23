@@ -14,7 +14,7 @@ python3 -m http.server 8811
 
 ## Yayınlama
 
-Depo adı `KULLANICIADI.github.io` → site `https://KULLANICIADI.github.io` adresinde açılır.
+Depo: `ygates69/ygates69.github.io` → site `https://ygates69.github.io`. Alan adı değişirse `index.html` (canonical, og:url, og:image), `robots.txt` ve `sitemap.xml` içindeki adres güncellenmeli.
 GitHub'da depo → **Settings → Pages → Source: Deploy from a branch → `main` / root**.
 
 Site dışarıya istek yapmaz (yazı tipleri dahil); KVKK metnindeki "takip yok" ifadesi buna dayanır.
