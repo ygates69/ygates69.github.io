@@ -2,6 +2,8 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="bcVeIDfe-SPyQ57Xr-KjTOM_LUvQv_SNRXM184rmbok">
 <title>YGATES Stratejik Yönetim ve Danışmanlık</title>
@@ -396,7 +398,7 @@
   </div>
 </footer>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<svg class="svg-sprite" width="0" height="0" aria-hidden="true">
   <symbol id="yga-logo" viewBox="100 90 820 820">
     <g fill="none" stroke="currentColor" stroke-width="61" stroke-linejoin="miter">
       <path d="M406 395 L509 498 L589 417 L424 251 L512 163 L600 251 L512 339"/>
@@ -406,16 +408,6 @@
   </symbol>
 </svg>
 
-<script>
-  const t = document.querySelector('.menu-toggle'), m = document.getElementById('menu');
-  t.addEventListener('click', () => {
-    const open = m.classList.toggle('open');
-    t.setAttribute('aria-expanded', open);
-  });
-  m.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    m.classList.remove('open'); t.setAttribute('aria-expanded', false);
-  }));
-  document.getElementById('yil').textContent = new Date().getFullYear();
-</script>
+<script src="assets/menu.js"></script>
 </body>
 </html>

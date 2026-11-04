@@ -251,3 +251,6 @@ em { font-style: italic; color: var(--brass); }
   html { scroll-behavior: auto; }
   .service { transition: none; }
 }
+
+/* Gizli SVG sembol deposu (CSP: satır içi style yerine sınıf) */
+.svg-sprite { position: absolute; }
