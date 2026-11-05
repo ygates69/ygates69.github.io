@@ -49,7 +49,8 @@ em { font-style: italic; color: var(--brass); }
 .btn:hover { background: var(--brass); border-color: var(--brass); }
 .btn-ghost { background: transparent; color: var(--ink); }
 .btn-ghost:hover { color: var(--white); }
-.btn-wa { background: #1f7a4d; border-color: #1f7a4d; }
+.btn-mail { background: var(--brass); border-color: var(--brass); }
+.btn-mail:hover { background: var(--brass-light); border-color: var(--brass-light); color: var(--ink); }
 .btn-ghost-light { background: transparent; color: var(--white); border-color: rgba(255,255,255,.45); }
 .btn-ghost-light:hover { color: var(--white); }
 .contact .hero-actions { margin-top: 1.8rem; display: flex; flex-wrap: wrap; gap: .8rem; }
@@ -158,6 +159,8 @@ em { font-style: italic; color: var(--brass); }
 .chips { list-style: none; margin: 1.1rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
 .product-link { display: inline-block; margin-top: 1.1rem; font-size: .88rem; font-weight: 600; color: var(--brass); text-decoration: none; }
 .product-link:hover { text-decoration: underline; }
+.product-body > p.product-status { display: inline-block; margin: -.1rem 0 .7rem; padding: .2rem .6rem; font-size: .72rem; font-weight: 600; letter-spacing: .06em; color: var(--brass); border: 1px solid var(--brass); }
+.product-body > p.product-price { margin-top: 1rem; font-size: .85rem; color: var(--text); }
 .chips li { font-size: .75rem; padding: .3rem .7rem; border: 1px solid var(--line); color: var(--text); }
 .note { margin-top: 1.8rem; font-size: .85rem; color: var(--muted); }
 .note a { color: var(--brass); }
