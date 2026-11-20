@@ -89,12 +89,12 @@ em { font-style: italic; color: var(--brass); }
 .credentials span { display: block; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--brass-light); margin-bottom: .2rem; }
 
 /* Stats */
-.stats { background: var(--white); border-block: 1px solid var(--line); }
+.stats { background: var(--ink); border-block: 1px solid var(--ink-2); }
 .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
-.stat { padding: 2.2rem 1.5rem; border-left: 1px solid var(--line); }
+.stat { padding: 2.2rem 1.5rem; border-left: 1px solid rgba(255,255,255,.12); }
 .stat:first-child { border-left: 0; padding-left: 0; }
-.stat strong { display: block; font-family: var(--serif); font-size: 2.6rem; color: var(--ink); line-height: 1; margin-bottom: .5rem; }
-.stat span { font-size: .9rem; color: var(--muted); }
+.stat strong { display: block; font-family: var(--serif); font-size: 2.6rem; color: var(--brass-light); line-height: 1; margin-bottom: .5rem; }
+.stat span { font-size: .9rem; color: #C9CED6; }
 
 /* Sections */
 .section { padding: clamp(4rem, 8vw, 6.5rem) 0; }
@@ -257,3 +257,22 @@ em { font-style: italic; color: var(--brass); }
 
 /* Gizli SVG sembol deposu (CSP: satır içi style yerine sınıf) */
 .svg-sprite { position: absolute; }
+
+/* Vitrin: satıştaki ürünler (taslak 20.11.2026) */
+.vitrin { padding: clamp(2.5rem, 5vw, 4rem) 0; background: var(--tint); border-top: 1px solid var(--line); }
+.vitrin-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.75rem; margin-top: .8rem; }
+.vitrin-kart { position: relative; min-height: 420px; overflow: hidden; border-radius: 6px; background: var(--ink); display: flex; align-items: flex-end; }
+.vitrin-kart > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 30%; z-index: 0; }
+.vitrin-kart::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(14,26,43,.05) 10%, rgba(14,26,43,.78) 48%, rgba(14,26,43,.96) 75%); }
+.vitrin-icerik { position: relative; z-index: 2; padding: 2rem 2rem 2.4rem; color: #F7F4EE; }
+.vitrin-icerik h3 { color: #fff; font-size: 2rem; margin: 0 0 .5rem; }
+.vitrin-icerik p { color: #E4E0D8; font-size: .95rem; max-width: 46ch; margin: 0; }
+.vitrin-etiket { font-size: .72rem !important; letter-spacing: .14em; text-transform: uppercase; color: var(--brass-light) !important; margin-bottom: .5rem !important; }
+.vitrin-aksiyon { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.1rem; margin-top: 1.3rem; }
+.vitrin-aksiyon span { font-size: .8rem; color: #C9CED6; }
+.btn-acik { background: var(--brass-light); color: var(--ink); border-color: var(--brass-light); }
+.btn-acik:hover { background: #fff; border-color: #fff; color: var(--ink); }
+.vitrin-not { position: absolute; z-index: 2; top: .8rem; right: .9rem; font-size: .68rem; color: rgba(255,255,255,.85); background: rgba(14,26,43,.55); padding: .2rem .5rem; border-radius: 3px; }
+.sektor-ikon { width: 30px; height: 30px; display: block; margin-bottom: .8rem; fill: none; stroke: var(--brass); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+@media (max-width: 980px) { .vitrin-grid { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .vitrin-kart { min-height: 0; flex-direction: column; align-items: stretch; } .vitrin-kart > img { position: relative; height: 210px; } .vitrin-kart::before { display: none; } .vitrin-icerik { padding: 1.4rem 1.3rem 1.8rem; } .vitrin-not { top: .6rem; right: .6rem; max-width: 80%; } }
