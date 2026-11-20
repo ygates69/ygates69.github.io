@@ -26,3 +26,11 @@ ozel_anahtar*
 *-satici/
 anahtarlar/
 YGATES-ANAHTAR/
+
+# --- İç çalışma notları: herkese açık depoya ve siteye girmez (G-261120-01) ---
+EKIP-CALISMALARI/
+TOPLANTILAR/
+CLAUDE.md
+DEVAM_NOTU.md
+IS_PLANI.md
+*.yedek-*
